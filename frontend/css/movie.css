@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* Theme colors */
+:root {
+    --primary-color: #fffaf4;
+    /* background */
+    --accent-color: #f5c8a3;
+    /* buttons, highlights, tape */
+    --tertiary-color: #4b3f2f;
+    /* text */
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--primary-color);
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    margin: 40px 20px;
+    text-align: center;
+    color: var(--tertiary-color);
+}
+
+#search {
+    padding: 12px 20px;
+    width: 280px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid var(--accent-color);
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Quicksand', sans-serif;
+    color: var(--tertiary-color);
+}
+
+#search::placeholder {
+    color: var(--tertiary-color);
+    opacity: 0.6;
+    font-style: italic;
+}
+
+#submit-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    margin-left: 12px;
+    background-color: var(--accent-color);
+    color: var(--tertiary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: #efb68e;
+
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.card {
+    width: 200px;
+    padding: 12px;
+    background-color: var(--primary-color);
+    border: 3px solid var(--accent-color);
+    border-radius: 10px;
+    font-family: 'Quicksand', sans-serif;
+    transition: transform 0.2s ease;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+    transform: rotate(-1deg) scale(1.03);
+}
+
+/* .card::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    width: 60px;
+    height: 20px;
+    background: var(--accent-color);
+    transform: rotate(-8deg);
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+    font-size: 17px;
+    margin: 10px 0 6px;
+    color: var(--tertiary-color);
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--tertiary-color);
+    opacity: 0.8;
+    margin: 4px 0;
+}
